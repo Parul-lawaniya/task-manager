@@ -1,0 +1,87 @@
+:root {
+  --color-body-bg: #edf1ec;
+  --color-card-bg: #ffffff;
+  --color-card-border: #e2e8f0;
+  --color-text-primary: #132013;
+  --color-text-muted: #64748b;
+  --color-primary: #1f6235;
+  --color-primary-dark: #0a6a4c;
+  --color-hero-gradient-start: #0d8f68;
+  --color-hero-gradient-end: #0b6849;
+  --color-input-bg: #f5faf4;
+  --color-input-border: #d9e5d8;
+  --color-icon-bg: #f2f6f1;
+  --color-empty-border: #d1dfd1;
+  --color-empty-bg: #f7fbf6;
+  --color-button-login: #0d8f68;
+  --color-button-login-hover: #0a6a4c;
+  --color-danger: #dc2626;
+  --color-danger-dark: #b91c1c;
+  --color-status-pending-bg: #fef3c7;
+  --color-status-pending-text: #a16207;
+  --color-status-done-bg: #bbf7d0;
+  --color-status-done-text: #166534;
+  --color-overlay: rgba(0, 0, 0, 0.35);
+  --color-modal-bg: #ffffff;
+  --color-shadow: rgba(15, 23, 42, 0.12);
+  --color-shadow-strong: rgba(15, 23, 42, 0.35);
+  --color-scrollbar: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] {
+  --color-body-bg: #0f172a;
+  --color-card-bg: #1e293b;
+  --color-card-border: #2f3c4f;
+  --color-text-primary: #f8fafc;
+  --color-text-muted: #cbd5f5;
+  --color-primary: #22c55e;
+  --color-primary-dark: #16a34a;
+  --color-hero-gradient-start: #052918;
+  --color-hero-gradient-end: #03150d;
+  --color-input-bg: #1e293b;
+  --color-input-border: #334155;
+  --color-icon-bg: #273347;
+  --color-empty-border: #334155;
+  --color-empty-bg: #1e293b;
+  --color-button-login: #15803d;
+  --color-button-login-hover: #166534;
+  --color-danger: #f87171;
+  --color-danger-dark: #ef4444;
+  --color-status-pending-bg: #facc15;
+  --color-status-pending-text: #422006;
+  --color-status-done-bg: #14532d;
+  --color-status-done-text: #bbf7d0;
+  --color-overlay: rgba(0, 0, 0, 0.65);
+  --color-modal-bg: #1e293b;
+  --color-shadow: rgba(2, 6, 23, 0.45);
+  --color-shadow-strong: rgba(2, 6, 23, 0.6);
+  --color-scrollbar: rgba(255, 255, 255, 0.25);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: var(--color-body-bg);
+  color: var(--color-text-primary);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar);
+  border-radius: 999px;
+}

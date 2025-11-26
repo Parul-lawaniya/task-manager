@@ -1,0 +1,40 @@
+.theme-toggle {
+  position: absolute;
+  top: 0.5rem;
+  right: 4rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--color-card-bg);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-card-border);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  z-index: 1100;
+  box-shadow: 0 10px 25px var(--color-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 15px 30px var(--color-shadow-strong);
+}
+
+.theme-toggle__icon {
+  font-size: 1rem;
+}
+
+.theme-toggle__label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .theme-toggle {
+    top: auto;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
